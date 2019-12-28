@@ -1,0 +1,7 @@
+php artisan tinker, permer d'utiliser du code php en ligne de commande sur laravel
+
+Cette commande crée un dossier mail dans Http et y met une class ContactMail pour l'envoie de mail et grace a markdown on crée un dossier emails/contact dans le dossieer view puis
+php artisan make:mail ContactMail --markdown=emails.contact.contact-form
+
+Aprés chaque modification du fichier .env pour l'envoie de mail
+php artisan config:cache
