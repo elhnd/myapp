@@ -34,4 +34,11 @@
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
     </php>
+    <logging>
+        <log type="coverage-html" target="./codeCoverage/" charset="UTF-8" yui="true" highlight="false" lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="./codeCoverage/codeCoverage.xml"/>
+        <log type="metrics-xml" target="./codeCoverage/metrics.xml"/>
+        <log type="test-xml" target="./codeCoverage/logfile.xml" logIncompleteSkipped="false"/>
+    </logging>
+   
 </phpunit>
