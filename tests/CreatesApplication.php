@@ -2,6 +2,9 @@
 
 namespace Tests;
 
+use App\Http\Controllers\ClientsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Console\Kernel;
 
 trait CreatesApplication
@@ -15,8 +18,8 @@ trait CreatesApplication
     {
         $app = require __DIR__.'/../bootstrap/app.php';
 
-        $app->make(Kernel::class)->bootstrap();
-
+       $app->make(Kernel::class)->bootstrap();
+    
         return $app;
     }
 }
