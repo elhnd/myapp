@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::view('a-propos','a-propos');
+Route::view('a-propos','a-propos')->middleware('test');
 
 
 // //Clints 
